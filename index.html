@@ -3,7 +3,7 @@
 <head>
 	<title></title>
 	<script type="text/javascript" src='script.js'></script>
-
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
 	<!--style tags....Justin would want it that way-->
 	<style>
 		body {
@@ -38,6 +38,7 @@
 	</style>
 </head>
 <body>
+	Hello, world
 	<h1>Hi, My Name is Justin and I love jQuery</h1>
 	<h2>Will you be my friend and jQuery with me?</h2>
     <img src="images/jkid.png" id="justinKid" alt="Justin">
@@ -49,7 +50,10 @@
 	  <li>Club</li>
 	  <li>jQuery</li>
 	  	  <li>Carpet diem</li>
-	  	  <li> 	<button> CLick here for more awesome facts!</button></li>
+	  	  <li> 	
+	  	  	<button id='facts'> CLick here for more awesome facts!</button>
+	  	  	<script>$('#facts').click(function(){prompt("Want to party with me?")})</script>
+	  	  </li>
 	</ol> 
 
 
@@ -64,7 +68,7 @@
 		style="width:75%; 
 		height:500px; 
 		border: 10px solid red" 
-		src="http://learn.jquery.com/">
+		src="https://learn.jquery.com/">
 	</iframe>
 
 
