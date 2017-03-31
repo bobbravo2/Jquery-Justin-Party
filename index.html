@@ -35,6 +35,16 @@
 			background-color: white;
 			text-align: center;
 		}
+		.skills {
+			background-color: blue;
+			color: white;
+			width: 569px;
+			text-align: center;
+		}
+		#imghover {
+			text-decoration: underline;
+			font-size: 20px;
+		}
 	</style>
 </head>
 <body>
@@ -50,24 +60,28 @@
 	  <li>Club</li>
 	  <li>jQuery</li>
 	  	  <li>Carpet diem</li>
-	  	  <li> 	
+	  	  <li>
 	  	  	<button id='facts'> CLick here for more awesome facts!</button>
 	  	  	<script>$('#facts').click(function(){prompt("Want to party with me?")})</script>
 	  	  </li>
-	</ol> 
+	</ol>
 
 
     <h3>I have a cat...he's awesome. And so are my skills in jQuery.</h3>
     <img src="images/jdog.jpg" alt="cat">
     <br>
 	<img style=float:right src="http://i.imgur.com/nMuKQM9.jpg">
-	
+
+	<h3 class="skills">Check out these sweet JQuery skills: <span id="imghover">Hover Me</span>
+		<img id="jqueryimg" src="images/jquery.png">
+	</h3>
+
 	<code> My favorite rapper is The Beatles </code>
 
-	<iframe 
-		style="width:75%; 
-		height:500px; 
-		border: 10px solid red" 
+	<iframe
+		style="width:75%;
+		height:500px;
+		border: 10px solid red"
 		src="https://learn.jquery.com/">
 	</iframe>
 
@@ -97,5 +111,12 @@
 
 	<!-- A wise man once said, "With great power comes great responsibility." -->
 	<!-- but Uncle Ben wasn't a web developer, so what'd he know. -->
+	<script>
+		$('#jqueryimg').hide();
+		$('#imghover').hover(function() {
+			$('#jqueryimg').toggle();
+		})
+
+	</script>
 </body>
 </html>
