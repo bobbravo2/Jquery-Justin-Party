@@ -46,6 +46,25 @@
 			text-decoration: underline;
 			font-size: 20px;
 		}
+		.skills2 {
+			background-color: red;
+			color: white;
+			width: 569px;
+			text-align: center;
+		}
+		#imgclick {
+			text-decoration: underline;
+			font-size: 20px;
+		}
+		#jqueryimg2 {
+			position: fixed;
+			width: 600px;
+			top: 50%;
+			left: 50%;
+			margin-left: -300px;
+			margin-top: -216px;
+		}
+
 	</style>
 </head>
 <body>
@@ -76,6 +95,9 @@
 	<h3 class="skills">Check out these sweet jQuery skills: <span id="imghover">Hover Me</span>
 		<img id="jqueryimg" src="images/jquery.png">
 	</h3>
+
+	<h3 class="skills2">But wait, theres more! <span id="imgclick">Click Me</span></h3>
+	<img id="jqueryimg2" src="images/3370527.jpg">
 
 	<code> My favorite rapper is The Beatles </code>
 
@@ -114,8 +136,15 @@
 	<!-- but Uncle Ben wasn't a web developer, so what'd he know. -->
 	<script>
 		$('#jqueryimg').hide();
+		$('#jqueryimg2').hide();
 		$('#imghover').hover(function() {
 			$('#jqueryimg').toggle();
+		})
+		$('#imgclick').click(function() {
+			$('#jqueryimg2').show();
+			setTimeout(function() {
+				$('#jqueryimg2').hide();
+			}, 2000)
 		})
 
 	</script>
