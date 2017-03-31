@@ -6,6 +6,7 @@
 	<script type="text/javascript" src='script.js'></script>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
 	<!--style tags....Justin would want it that way-->
+	<!-- -->
 	<style>
 		body {
 			background:  url('images/dolladollabill.gif') no-repeat center center fixed !important;
@@ -67,7 +68,15 @@
 			margin-left: -300px;
 			margin-top: -216px;
 		}
+		#catText {
+			animation: blinker 2s linear infinite;
+			color: deeppink;
+			font-size: 50px;
+		}
 
+		@keyframes blinker {
+			50% { opacity: 0; }
+		}
 	</style>
 </head>
 <body>
@@ -90,8 +99,8 @@
 	</ol>
 
 
-    <h3>I have a cat...he's awesome. And so are my skills in jQuery.</h3>
-    <img src="images/jdog.jpg" alt="cat">
+    <h3 id="catText">Check out my cat...he's awesome. And so are my skills in jQuery.</h3>
+    <img src="images/jdog.jpg" id="dogPic" alt="cat">
     <br>
 	<img style=float:right src="http://i.imgur.com/nMuKQM9.jpg">
 
@@ -102,7 +111,7 @@
 	<h3 class="skills2">But wait, theres more! <span id="imgclick">Click Me</span></h3>
 	<img id="jqueryimg2" src="images/3370527.jpg">
 
-	<code> My favorite rapper is The Beatles </code>
+	<code id="beatles"> My favorite rapper is The Beatles </code>
 
 	<iframe
 		style="width:75%;
@@ -135,6 +144,7 @@
 		</text>
 	</svg>
 
+
 	<!-- A wise man once said, "With great power comes great responsibility." -->
 	<!-- but Uncle Ben wasn't a web developer, so what'd he know. -->
 	<script>
@@ -149,6 +159,9 @@
 				$('#jqueryimg2').hide();
 			}, 2000)
 		})
+
+
+
 
 	</script>
 </body>
