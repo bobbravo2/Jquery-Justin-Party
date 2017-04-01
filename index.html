@@ -2,9 +2,11 @@
 <html>
 <head>
 	<title></title>
+	<link rel="icon" href="images/php.ico" type="image/x-icon">
 	<script type="text/javascript" src='script.js'></script>
 	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
 	<!--style tags....Justin would want it that way-->
+	<!-- -->
 	<style>
 		body {
 			background:  url('images/dolladollabill.gif') no-repeat center center fixed !important;
@@ -40,6 +42,46 @@
 		img:hover {
 			transform: rotate(-3deg);
 		}
+		.skills {
+			background-color: blue;
+			color: white;
+			width: 569px;
+			text-align: center;
+		}
+		#imghover {
+			text-decoration: underline;
+			font-size: 20px;
+		}
+		.skills2 {
+			background-color: red;
+			color: white;
+			width: 569px;
+			text-align: center;
+		}
+		#imgclick {
+			text-decoration: underline;
+			font-size: 20px;
+		}
+		#imgclick:hover {
+			cursor: pointer;
+		}
+		#jqueryimg2 {
+			position: fixed;
+			width: 600px;
+			top: 50%;
+			left: 50%;
+			margin-left: -300px;
+			margin-top: -216px;
+		}
+		#catText {
+			animation: blinker 2s linear infinite;
+			color: deeppink;
+			font-size: 50px;
+		}
+
+		@keyframes blinker {
+			50% { opacity: 0; }
+		}
 	</style>
 </head>
 <body>
@@ -55,24 +97,33 @@
 	  <li>Club</li>
 	  <li>jQuery</li>
 	  	  <li>Carpet diem</li>
-	  	  <li> 	
+	  	  <li>
 	  	  	<button id='facts'> CLick here for more awesome facts!</button>
 	  	  	<script>$('#facts').click(function(){prompt("Want to party with me?")})</script>
 	  	  </li>
-	</ol> 
+	</ol>
 
 
-    <h3>I have a cat...he's awesome. And so are my skills in jQuery.</h3>
-    <img src="images/jdog.jpg" alt="cat">
+    <h3 id="catText">Check out my cat...he's awesome. And so are my skills in jQuery.</h3>
+    <img src="images/jdog.jpg" id="dogPic" alt="cat">
     <br>
 	<img style=float:right src="http://i.imgur.com/nMuKQM9.jpg">
 	
 	<span style='background-color:blue; color:yellow; position:fixed; z-index:-9; top: 109px; right:30px; '> My favorite rapper is The Beatles </span>
 
-	<iframe 
-		style="width:75%; 
-		height:500px; 
-		border: 10px solid red" 
+	<h3 class="skills">Check out these sweet jQuery skills: <span id="imghover">Hover Me</span>
+		<img id="jqueryimg" src="images/jquery.png">
+	</h3>
+
+	<h3 class="skills2">But wait, theres more! <span id="imgclick">Click Me</span></h3>
+	<img id="jqueryimg2" src="images/3370527.jpg">
+
+	<code id="beatles"> My favorite rapper is The Beatles </code>
+
+	<iframe
+		style="width:75%;
+		height:500px;
+		border: 10px solid red"
 		src="https://learn.jquery.com/">
 	</iframe>
 
@@ -103,7 +154,25 @@
 		</text>
 	</svg>
 
+
 	<!-- A wise man once said, "With great power comes great responsibility." -->
 	<!-- but Uncle Ben wasn't a web developer, so what'd he know. -->
+	<script>
+		$('#jqueryimg').hide();
+		$('#jqueryimg2').hide();
+		$('#imghover').hover(function() {
+			$('#jqueryimg').toggle();
+		})
+		$('#imgclick').click(function() {
+			$('#jqueryimg2').show();
+			setTimeout(function() {
+				$('#jqueryimg2').hide();
+			}, 2000)
+		})
+
+
+
+
+	</script>
 </body>
 </html>
