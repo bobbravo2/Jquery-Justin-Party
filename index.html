@@ -131,6 +131,15 @@
 	<img src='images/it-was-a-good-day-googled-yahoo-all-by-myself-it-was-a-good-day.jpg'>
 	<img src='images/yo-dawg-yo-dawg-i-heard-you-like-jquery-so-i-put-a-inside-of-a-and-wrote-divtextspantext.jpg'>
 
+	<div style='width:500px; height: 500px; background-color: yellow; position:relative;'>
+		<button id='click4bugs' style='position:absolute; left:200px; top:200px; font-size: 20px'><code>Report A Bug</code></button>
+		<script type="text/javascript">
+			$('#click4bugs').mouseover(function(){
+				$(this).css({"color": "red", left:Math.random()*400 + 'px', top:Math.random()*400 + 'px'})
+			})
+		</script>
+	</div>
+
 	<audio autoplay loop="true">
 		Your browser does not support the <code>audio</code> element.
  		<source src="song/themesong.mp3" type="audio/mp3">	</audio>
