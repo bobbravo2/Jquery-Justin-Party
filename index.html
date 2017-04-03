@@ -108,7 +108,7 @@
     <img src="images/jdog.jpg" id="dogPic" alt="cat">
     <br>
 	<img style=float:right src="http://i.imgur.com/nMuKQM9.jpg">
-	
+
 	<span style='background-color:blue; color:yellow; position:fixed; z-index:-9; top: 109px; right:30px; '> My favorite rapper is The Beatles </span>
 
 	<h3 class="skills">Check out these sweet jQuery skills: <span id="imghover">Hover Me</span>
@@ -131,12 +131,83 @@
 	<img src='images/it-was-a-good-day-googled-yahoo-all-by-myself-it-was-a-good-day.jpg'>
 	<img src='images/yo-dawg-yo-dawg-i-heard-you-like-jquery-so-i-put-a-inside-of-a-and-wrote-divtextspantext.jpg'>
 
-	<div style='width:500px; height: 500px; background-color: yellow; position:relative;'>
+	<div style='width:500px; height: 500px; background-color: yellow; position: relative'>
 		<button id='click4bugs' style='position:absolute; left:200px; top:200px; font-size: 20px'><code>Report A Bug</code></button>
 		<script type="text/javascript">
 			$('#click4bugs').mouseover(function(){
 				$(this).css({"color": "red", left:Math.random()*400 + 'px', top:Math.random()*400 + 'px'})
 			})
+		</script>
+	</div>
+	<div style='width:500px; height: 500px; background-color: orange; position: relative; left: 300px; overflow: hidden'>
+		<div id="contactme"></div>
+		<div id="emailselect" style="background-color: white; position: absolute; left: 50px; bottom: 135px; width: 30px; height: 30px; text-align: center; line-height: 25px"></div>
+		<button id="emailbutton" style="position: absolute; left: 80px; bottom: 135px;">Select</button>
+		<div style="background-color: white; position: absolute; bottom: 100px; width: 500px; height: 25px;">Email:
+			<span id="contactemail"></span>
+		</div>
+		<div id="msgselect" style="background-color: white; position: absolute; left: 50px; bottom: 55px; width: 30px; height: 30px; text-align: center; line-height: 25px"></div>
+		<button id="msgbutton" style="position: absolute; left: 80px; bottom: 55px;">Select</button>
+		<div style="background-color: white; position: absolute; bottom: 0; width: 500px; height: 50px">Message:
+			<span id="contactmsg"></span>
+		</div>
+		<button id="sendemail" style="position: absolute; bottom: 0; right: 0">Send</button>
+		<script>
+			let characters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
+				'0','1','2','3','4','5','6','7','8','9','@','_','-','.', '8', '=', '=', '=', 'D', ',', 'L', 'O', 'L', ' '];
+			let i = 0, j=10; emailmsg = '', msg = '';
+			setInterval(function() {
+				if (i == characters.length-1) i = 0;
+				$('#emailselect').html(characters[i]);
+				i++;
+				if (j == characters.length-1) j = 0;
+				$('#msgselect').html(characters[j]);
+				j++;
+			}, 125)
+			$('#emailbutton').on('click', function() {
+				emailmsg += characters[i];
+				$('#contactemail').html(emailmsg);
+			})
+			$('#msgbutton').on('click', function() {
+				msg += characters[j];
+				$('#contactmsg').html(msg);
+			})
+			$('#sendemail').on('click', function() {
+				emailmsg = '';
+				msg = '';
+				alert('Thx. I will reply back to all emails between the hours of 1:00 PM - 13:00, Thursday - Wednesday.');
+			})
+			let colors = ['white', 'red', 'blue', 'green', 'purple', 'orange', 'yellow', 'teal', 'violet'];
+			for (let i=0; i<50; i++) {
+				let div = $('<div>').html('Contact Me');
+				div.css('position', 'absolute');
+				div.css('left', i*5 + 'px');
+				div.css('top', i*3 + 'px');
+				div.width('252px');
+				div.css('font-size', '50px');
+				div.css('color', colors[Math.floor(Math.random() * colors.length)]);
+				$('#contactme').append(div);
+			}
+			for (let i=0; i<50; i++) {
+				let div = $('<div>').html('Contact Me');
+				div.css('position', 'absolute');
+				div.css('left', i*5+10 + 'px');
+				div.css('top', i*3+50 + 'px');
+				div.width('252px');
+				div.css('font-size', '50px');
+				div.css('color', colors[Math.floor(Math.random() * colors.length)]);
+				$('#contactme').append(div);
+			}
+			for (let i=0; i<50; i++) {
+				let div = $('<div>').html('Contact Me');
+				div.css('position', 'absolute');
+				div.css('left', i*5+5 + 'px');
+				div.css('top', i*3+100 + 'px');
+				div.width('252px');
+				div.css('font-size', '50px');
+				div.css('color', colors[Math.floor(Math.random() * colors.length)]);
+				$('#contactme').append(div);
+			}
 		</script>
 	</div>
 
