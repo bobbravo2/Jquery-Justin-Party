@@ -90,6 +90,61 @@
 		@keyframes blinker {
 			50% { opacity: 0; }
 		}
+
+		@import url(http://fonts.googleapis.com/css?family=Bangers);
+
+body{
+ background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/px_by_Gre3g.png); 
+}
+
+h1{
+  color: #fff;
+  font-family: 'Bangers', cursive;
+  font-size: 50px;
+  text-align: center;
+}
+
+p{
+  color: #fff;
+  font-family: arial, san-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+p a{
+  color: #fff;
+}
+
+#photoShowContainer{
+  border: 5px solid #fff;
+  margin: 30px auto 0px auto;
+  position: relative;
+  width: 400px;
+  
+  -moz-box-shadow: 0px 0px 25px black;
+  -webkit-box-shadow: 0px 0px 25px black;
+  box-shadow: 0px 0px 25px black;
+}
+
+#photoShowWrap{
+  height: 300px;
+  overflow: hidden;
+   position: relative;
+  width: 100%;
+  z-index: 1;
+}
+
+#photoShow{
+  height: 300px;
+	position: relative;
+  width: 1200px;
+}
+
+#photoShow img{
+  float: left;
+  height: 300px;
+  width: 400px;
+}
 	</style>
 </head>
 <body>
@@ -113,6 +168,22 @@
 	<img src="https://media.giphy.com/media/gRkFfZqJv5L8I/giphy.gif">
 	<h1>Best browser in the world is Waiiiiiiiiit JQUERY!!!!!!!!!!</h1>
 	<img src="https://media.giphy.com/media/X1zfywreqWqIw/giphy.gif">
+
+	<h1>Justin's best Skill LMAOOOOOO</h1>
+	<h1>Custom jQuery Slider 2</h1>
+
+		<div id="photoShowContainer">
+		  <div id="photoShowWrap">
+		    <div id="photoShow">
+		      
+		        <img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/137120/shot_1301059844.jpg"/>
+		      
+		        <img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/304344/tony-the-tiger.jpg"/>
+		      
+		        <img id="one" src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/308970/toucan-sam.jpg"/>
+		    </div>
+		  </div>
+		</div>
 
     <h3 id="catText">More about me: Check out my cat...he's awesome. And so are my skills in jQuery. I'm hard working. I have an I 4 design. My favorite color is green (because I like $). I like short walks on the beach because I like the beach but not walking. Tigers are really cool... <b><ul>Rawrrrrr! (that's what tigers sound like)<ul><b></h3>
     <img src="images/jdog.jpg" id="dogPic" alt="cat">
@@ -273,9 +344,7 @@
 				$('#jqueryimg2').hide();
 			}, 2000)
 		})
-
-
-
+		alert('welcome to my website!');
 
 	</script>
 
