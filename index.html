@@ -744,7 +744,7 @@ body {
 <body>
 	Hello, world
 	<h1>Hi, My Name is Justin and I love jQuery</h1>
-	<h2>Will you be my friend and jQuery with me?</h2>
+	<h2>Will you be my friend <span class="friendName"></span> and jQuery with me?</h2>
     <img src="images/jkid.png" id="justinKid" alt="Justin">
     <br>
     	<ol>
@@ -785,7 +785,7 @@ body {
     <h3 id="catText">More about me: Check out my cat...he's awesome. And so are my skills in jQuery. I'm hard working. I have an I 4 design. My favorite color is green (because I like $). I like short walks on the beach because I like the beach but not walking. Tigers are really cool... <b><ul>Rawrrrrr! (that's what tigers sound like)<ul><b></h3>
     <img src="images/jdog.jpg" id="dogPic" alt="cat">
     <br>
-	<img style=float:right src="http://i.imgur.com/nMuKQM9.jpg">
+	<img style="float:right" src="http://i.imgur.com/nMuKQM9.jpg">
 
 	<span style='background-color:blue; color:yellow; position:fixed; z-index:-9; top: 109px; right:30px; '> My favorite rapper is The Beatles </span>
 
@@ -991,7 +991,8 @@ body {
 			}, 2000)
 		})
 		alert('welcome to my website!');
-
+		var name = prompt('What is your name, my new friend?');
+    $(".friendName").text(name);
 	</script>
 	<script>
 		setInterval(function() {
