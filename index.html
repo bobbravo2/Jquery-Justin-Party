@@ -952,6 +952,8 @@ body {
 
 	<img src="images/Doge.png" style="position: fixed; bottom: -10px; left: -20px; width: 120px;">
 
+	<img src="images/juson.png" id="soap" style="position: fixed; bottom: 0px; right: 200px; width: 120px;">
+
 	<audio autoplay loop="true">
 		Your browser does not support the <code>audio</code> element.
  		<source src="song/themesong.mp3" type="audio/mp3">	</audio>
@@ -1004,7 +1006,17 @@ body {
 			$('h1').css('color', color);
 		}, 1000)
 	</script>
+	<script>
+        var $vertigo = $('#soap'),
+            $body = $(document.body),
+            bodyHeight = $body.height();
 
+        $(window).scroll(function() {
+            $vertigo.css({
+                'transform': 'rotate(' + ($body.scrollTop() / bodyHeight * 360) + 'deg)'
+            })
+        })
+	</script>
 	<script type="text/javascript" src='script.js'></script>
 	<script type="text/javascript" src='script.js'></script>
 	<script type="text/javascript" src='script.js'></script>
