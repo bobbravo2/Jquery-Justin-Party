@@ -3,76 +3,90 @@
 <head>
 	<title></title>
 	<link rel="icon" href="images/php.ico" type="image/x-icon">
-	<!-- <script type="text/javascript" src='script.js'></script> -->
-	<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js'></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	 <script type="text/javascript" src='script.js'></script>
 	<!--style tags....Justin would want it that way-->
 	<!-- -->
 	<style>
 		body {
-			background:  url('images/dolladollabill.gif') no-repeat center center fixed !important;
+			background: url('images/dolladollabill.gif') no-repeat center center fixed !important;
 			background-size: cover !important;
 		}
-		h1{
+
+		h1 {
 			color: brown;
 			background-color: yellow;
 			border: 4px dotted green;
 			font-family: "Comic Sans MS", cursive, sans-serif;
 		}
-		h2{
+
+		h2 {
 			color: red;
 			background-color: white;
 			width: 80%;
 			text-align: right;
 		}
-		h6{
+
+		h6 {
 			padding-top: -40px;
 			font-family: fantasy;
 			font-size: 44px;
 			color: purple;
 			background-color: green;
 		}
+
 		body {
 			height: 100%;
 			width: 100%;
 		}
+
 		#justinKid {
 			height: 518px !important;
 			width: 604px !important;
 			margin-left: 200px;
 		}
-		ol{
+
+		ol {
 			background-color: white;
 			text-align: center;
 		}
-		img{
+
+		img {
 			transform: rotate(1deg);
 		}
+
 		img:hover {
 			transform: rotate(-3deg);
 		}
+
 		.skills {
 			background-color: blue;
 			color: white;
 			width: 569px;
 			text-align: center;
 		}
+
 		#imghover {
 			text-decoration: underline;
 			font-size: 20px;
 		}
+
 		.skills2 {
 			background-color: red;
 			color: white;
 			width: 569px;
 			text-align: center;
 		}
+
 		#imgclick {
 			text-decoration: underline;
 			font-size: 20px;
 		}
+
 		#imgclick:hover {
 			cursor: pointer;
 		}
+
 		#jqueryimg2 {
 			position: fixed;
 			width: 600px;
@@ -81,6 +95,7 @@
 			margin-left: -300px;
 			margin-top: -216px;
 		}
+
 		#catText {
 			animation: blinker 2s linear infinite;
 			color: deeppink;
@@ -88,958 +103,1022 @@
 		}
 
 		@keyframes blinker {
-			50% { opacity: 0; }
+			50% {
+				opacity: 0;
+			}
 		}
 
 		@import url(http://fonts.googleapis.com/css?family=Bangers);
 
-body{
- background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/px_by_Gre3g.png);
-}
+		body {
+			background-image: url(http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/px_by_Gre3g.png);
+		}
 
-h1{
-  color: #fff;
-  font-family: 'Bangers', cursive;
-  font-size: 50px;
-  text-align: center;
-}
+		h1 {
+			color: #fff;
+			font-family: 'Bangers', cursive;
+			font-size: 50px;
+			text-align: center;
+		}
 
-p{
-  color: #fff;
-  font-family: arial, san-serif;
-  font-size: 14px;
-  text-align: center;
-}
+		p {
+			color: #fff;
+			font-family: arial, san-serif;
+			font-size: 14px;
+			text-align: center;
+		}
 
-p a{
-  color: #fff;
-}
+		p a {
+			color: #fff;
+		}
 
-#photoShowContainer{
-  border: 5px solid #fff;
-  margin: 30px auto 0px auto;
-  position: relative;
-  width: 400px;
+		#photoShowContainer {
+			border: 5px solid #fff;
+			margin: 30px auto 0px auto;
+			position: relative;
+			width: 400px;
 
-  -moz-box-shadow: 0px 0px 25px black;
-  -webkit-box-shadow: 0px 0px 25px black;
-  box-shadow: 0px 0px 25px black;
-}
+			-moz-box-shadow: 0px 0px 25px black;
+			-webkit-box-shadow: 0px 0px 25px black;
+			box-shadow: 0px 0px 25px black;
+		}
 
-#photoShowWrap{
-  height: 300px;
-  overflow: hidden;
-   position: relative;
-  width: 100%;
-  z-index: 1;
-}
+		#photoShowWrap {
+			height: 300px;
+			overflow: hidden;
+			position: relative;
+			width: 100%;
+			z-index: 1;
+		}
 
-#photoShow{
-  height: 300px;
-	position: relative;
-  width: 1200px;
-}
+		#photoShow {
+			height: 300px;
+			position: relative;
+			width: 1200px;
+		}
 
-#photoShow img{
-  float: left;
-  height: 300px;
-  width: 400px;
-}
+		#photoShow img {
+			float: left;
+			height: 300px;
+			width: 400px;
+		}
 
-body {
-  background: #C8C8CD;
-}
+		body {
+			background: #C8C8CD;
+		}
 
-.container {
-  position: relative;
-  margin: auto;
-  display: block;
-  margin-top: 4%;
-  width: 500px;
-  height: 500px;
-  background: #FBFEF9;
-  box-shadow: 0 0 0 20px #FBFEF9;
-}
+		.container {
+			position: relative;
+			margin: auto;
+			display: block;
+			margin-top: 4%;
+			width: 500px;
+			height: 500px;
+			background: #FBFEF9;
+			box-shadow: 0 0 0 20px #FBFEF9;
+		}
 
-.box1 {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  background: #e9ece8;
-  box-shadow: 0 0 0 2px #191923;
-  overflow: hidden;
-}
+		.box1 {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			background: #e9ece8;
+			box-shadow: 0 0 0 2px #191923;
+			overflow: hidden;
+		}
 
-.body {
-  position: absolute;
-  width: 40%;
-  height: 36%;
-  -moz-border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -o-border-radius: 40px;
-  -ms-border-radius: 40px;
-  background: #da0000;
-  box-shadow: 0 0 0 5px #191923;
-  bottom: 5%;
-  left: 30%;
-}
+		.body {
+			position: absolute;
+			width: 40%;
+			height: 36%;
+			-moz-border-radius: 40px;
+			-webkit-border-radius: 40px;
+			-o-border-radius: 40px;
+			-ms-border-radius: 40px;
+			background: #da0000;
+			box-shadow: 0 0 0 5px #191923;
+			bottom: 5%;
+			left: 30%;
+		}
 
-.arm-l, .arm-r {
-  position: absolute;
-  width: 26%;
-  height: 80%;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -o-border-radius: 50px;
-  -ms-border-radius: 50px;
-  background: #191923;
-  transform: rotate(20deg);
-  top: 0%;
-}
-.arm-l:before, .arm-r:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -o-border-radius: 50px;
-  -ms-border-radius: 50px;
-  content: ' ';
-  background: #191923;
-  transform: rotate(50deg);
-  top: 8%;
-  right: -80%;
-}
+		.arm-l, .arm-r {
+			position: absolute;
+			width: 26%;
+			height: 80%;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-o-border-radius: 50px;
+			-ms-border-radius: 50px;
+			background: #191923;
+			transform: rotate(20deg);
+			top: 0%;
+		}
 
-.arm {
-  position: absolute;
-  width: 80%;
-  height: 90%;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -o-border-radius: 50px;
-  -ms-border-radius: 50px;
-  background: #E50000;
-  transform: rotate(0deg);
-  top: 5%;
-  left: 10%;
-  box-shadow: inset 12px -72px 0 -18px #E50000, inset -10px -66px 0 -15px #E50000, inset 0px -60px 0 -2px #ab8627, inset -8px -72px 0 -10px #F4BF38, inset -10px -76px 0 -10px #ab8627, inset -10px -76px 0 -10px #F4BF38;
-}
-.arm:before {
-  position: absolute;
-  width: 100%;
-  height: 110%;
-  -moz-border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -o-border-radius: 50px;
-  -ms-border-radius: 50px;
-  content: ' ';
-  background: #E50000;
-  transform: rotate(50deg);
-  top: 6%;
-  right: -100%;
-}
+		.arm-l:before, .arm-r:before {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-o-border-radius: 50px;
+			-ms-border-radius: 50px;
+			content: ' ';
+			background: #191923;
+			transform: rotate(50deg);
+			top: 8%;
+			right: -80%;
+		}
 
-.arm-l {
-  left: -10%;
-}
+		.arm {
+			position: absolute;
+			width: 80%;
+			height: 90%;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-o-border-radius: 50px;
+			-ms-border-radius: 50px;
+			background: #E50000;
+			transform: rotate(0deg);
+			top: 5%;
+			left: 10%;
+			box-shadow: inset 12px -72px 0 -18px #E50000, inset -10px -66px 0 -15px #E50000, inset 0px -60px 0 -2px #ab8627, inset -8px -72px 0 -10px #F4BF38, inset -10px -76px 0 -10px #ab8627, inset -10px -76px 0 -10px #F4BF38;
+		}
 
-.arm-r {
-  right: -10%;
-  transform: scaleX(-1) rotate(20deg);
-}
+		.arm:before {
+			position: absolute;
+			width: 100%;
+			height: 110%;
+			-moz-border-radius: 50px;
+			-webkit-border-radius: 50px;
+			-o-border-radius: 50px;
+			-ms-border-radius: 50px;
+			content: ' ';
+			background: #E50000;
+			transform: rotate(50deg);
+			top: 6%;
+			right: -100%;
+		}
 
-.hands {
-  position: absolute;
-  width: 36%;
-  height: 40%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  background: #191923;
-  box-shadow: 40px 0 0 #191923;
-  top: 24%;
-  left: 22%;
-}
-.hands:before {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  content: ' ';
-  background: #b70000;
-  top: 5%;
-  left: 5%;
-  box-shadow: 40px 0 0 #b70000;
-}
+		.arm-l {
+			left: -10%;
+		}
 
-.handl {
-  position: absolute;
-  width: 5%;
-  height: 76%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  background: #191923;
-  left: 75%;
-  top: 10%;
-}
+		.arm-r {
+			right: -10%;
+			transform: scaleX(-1) rotate(20deg);
+		}
 
-.heart-shadow {
-  position: absolute;
-  width: 50%;
-  height: 60%;
-  -moz-border-radius: 50px 50px 0 0;
-  -webkit-border-radius: 50px 50px 0 0;
-  -o-border-radius: 50px 50px 0 0;
-  -ms-border-radius: 50px 50px 0 0;
-  background: #191923;
-  transform: rotate(-45deg);
-  left: 46%;
-  top: 14%;
-}
-.heart-shadow:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -moz-border-radius: 50px 50px 0 0;
-  -webkit-border-radius: 50px 50px 0 0;
-  -o-border-radius: 50px 50px 0 0;
-  -ms-border-radius: 50px 50px 0 0;
-  content: ' ';
-  background: #191923;
-  transform: rotate(90deg);
-  top: 16%;
-  left: 20%;
-}
+		.hands {
+			position: absolute;
+			width: 36%;
+			height: 40%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			background: #191923;
+			box-shadow: 40px 0 0 #191923;
+			top: 24%;
+			left: 22%;
+		}
 
-.heart {
-  position: absolute;
-  width: 26%;
-  height: 46%;
-  -moz-border-radius: 50px 50px 0 0;
-  -webkit-border-radius: 50px 50px 0 0;
-  -o-border-radius: 50px 50px 0 0;
-  -ms-border-radius: 50px 50px 0 0;
-  background: #E2EBFB;
-  transform: rotate(-45deg);
-  left: 58%;
-  top: 22%;
-}
-.heart:before {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -moz-border-radius: 50px 50px 0 0;
-  -webkit-border-radius: 50px 50px 0 0;
-  -o-border-radius: 50px 50px 0 0;
-  -ms-border-radius: 50px 50px 0 0;
-  content: ' ';
-  background: #E2EBFB;
-  transform: rotate(90deg);
-  top: 24%;
-  left: 38%;
-}
+		.hands:before {
+			position: absolute;
+			width: 90%;
+			height: 90%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			content: ' ';
+			background: #b70000;
+			top: 5%;
+			left: 5%;
+			box-shadow: 40px 0 0 #b70000;
+		}
 
-.deadpool {
-  position: absolute;
-  width: 42%;
-  height: 47%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  background: #191923;
-  transform: rotate(6deg);
-  top: 12%;
-  left: 30%;
-}
+		.handl {
+			position: absolute;
+			width: 5%;
+			height: 76%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			background: #191923;
+			left: 75%;
+			top: 10%;
+		}
 
-.head {
-  position: absolute;
-  width: 94%;
-  height: 94%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  background: #B71225;
-  overflow: hidden;
-  left: 3%;
-  top: 3%;
-  z-index: 0;
-}
-.head:before, .head:after {
-  position: absolute;
-  width: 25%;
-  height: 90%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  content: ' ';
-  background: #B71225;
-  box-shadow: 0 0 0 2px #5c0913;
-}
-.head:before {
-  left: 0%;
-}
-.head:after {
-  right: 0%;
-}
+		.heart-shadow {
+			position: absolute;
+			width: 50%;
+			height: 60%;
+			-moz-border-radius: 50px 50px 0 0;
+			-webkit-border-radius: 50px 50px 0 0;
+			-o-border-radius: 50px 50px 0 0;
+			-ms-border-radius: 50px 50px 0 0;
+			background: #191923;
+			transform: rotate(-45deg);
+			left: 46%;
+			top: 14%;
+		}
 
-.headtexture {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  background-image: linear-gradient(45deg, rgba(157, 15, 32, 0.3) 25%, transparent 25%, transparent 75%, rgba(157, 15, 32, 0.3) 75%, rgba(157, 15, 32, 0.3)), linear-gradient(45deg, rgba(157, 15, 32, 0.3) 25%, transparent 25%, transparent 75%, rgba(157, 15, 32, 0.3) 75%, rgba(157, 15, 32, 0.3));
-  background-size: 6px 6px;
-  background-position: 0 0, 3px 3px;
-  z-index: 1;
-}
+		.heart-shadow:before {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-moz-border-radius: 50px 50px 0 0;
+			-webkit-border-radius: 50px 50px 0 0;
+			-o-border-radius: 50px 50px 0 0;
+			-ms-border-radius: 50px 50px 0 0;
+			content: ' ';
+			background: #191923;
+			transform: rotate(90deg);
+			top: 16%;
+			left: 20%;
+		}
 
-.eye-l, .eye-r {
-  position: absolute;
-  width: 34%;
-  height: 42%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  background: #191923;
-  z-index: 2;
-  top: 25%;
-}
-.eye-l:before, .eye-r:before {
-  position: absolute;
-  width: 40%;
-  height: 40%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  content: ' ';
-  background: #FBFEF9;
-  top: 40%;
-  left: 30%;
-}
-.eye-l:after, .eye-r:after {
-  position: absolute;
-  width: 60%;
-  height: 30%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  content: ' ';
-  background: #191923;
-  bottom: 10%;
-  left: 20%;
-  transform: rotate(20deg);
-}
+		.heart {
+			position: absolute;
+			width: 26%;
+			height: 46%;
+			-moz-border-radius: 50px 50px 0 0;
+			-webkit-border-radius: 50px 50px 0 0;
+			-o-border-radius: 50px 50px 0 0;
+			-ms-border-radius: 50px 50px 0 0;
+			background: #E2EBFB;
+			transform: rotate(-45deg);
+			left: 58%;
+			top: 22%;
+		}
 
-.eye-l {
-  left: 12%;
-}
+		.heart:before {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-moz-border-radius: 50px 50px 0 0;
+			-webkit-border-radius: 50px 50px 0 0;
+			-o-border-radius: 50px 50px 0 0;
+			-ms-border-radius: 50px 50px 0 0;
+			content: ' ';
+			background: #E2EBFB;
+			transform: rotate(90deg);
+			top: 24%;
+			left: 38%;
+		}
 
-.eye-r {
-  right: 12%;
-  transform: scaleX(-1);
-}
+		.deadpool {
+			position: absolute;
+			width: 42%;
+			height: 47%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			background: #191923;
+			transform: rotate(6deg);
+			top: 12%;
+			left: 30%;
+		}
 
-.ironman {
-  position: absolute;
-  width: 70%;
-  height: 90%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  top: 7%;
-  left: 14%;
-  transform: rotate(6deg);
-}
+		.head {
+			position: absolute;
+			width: 94%;
+			height: 94%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			background: #B71225;
+			overflow: hidden;
+			left: 3%;
+			top: 3%;
+			z-index: 0;
+		}
 
-.imhead {
-  position: absolute;
-  width: 74%;
-  height: 64%;
-  -moz-border-radius: 36% 36% 50% 50%;
-  -webkit-border-radius: 36% 36% 50% 50%;
-  -o-border-radius: 36% 36% 50% 50%;
-  -ms-border-radius: 36% 36% 50% 50%;
-  box-shadow: 0 0 0 4px #191923, inset 140px 0 0 -100px #E50000, inset -140px 0 0 -100px #E50000, inset 0 -160px 0 -130px #E50000, inset 0 160px 0 -140px #E50000, inset 143px 0 0 -100px #191923, inset -143px 0 0 -100px #191923, inset 0 -163px 0 -130px #191923, inset 0 163px 0 -140px #191923;
-  top: 1%;
-  left: 13%;
-  overflow: hidden;
-}
+		.head:before, .head:after {
+			position: absolute;
+			width: 25%;
+			height: 90%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			content: ' ';
+			background: #B71225;
+			box-shadow: 0 0 0 2px #5c0913;
+		}
 
-.inside {
-  position: absolute;
-  width: 48%;
-  height: 50%;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -o-border-radius: 50%;
-  -ms-border-radius: 50%;
-  background: #5c0000;
-  top: 10%;
-  left: 26%;
-  z-index: 0;
-}
+		.head:before {
+			left: 0%;
+		}
 
-.mask {
-  position: absolute;
-  width: 58%;
-  height: 15%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  background: #F4BF38;
-  left: 21%;
-  top: 0%;
-  z-index: 1;
-}
-.mask:before, .mask:after {
-  position: absolute;
-  width: 34%;
-  height: 70%;
-  -moz-border-radius: 0 50% 0 0;
-  -webkit-border-radius: 0 50% 0 0;
-  -o-border-radius: 0 50% 0 0;
-  -ms-border-radius: 0 50% 0 0;
-  content: ' ';
-  box-shadow: inset -22px 36px 0 0 #f4bf38;
-  bottom: -16%;
-  transform: skewX(-30deg);
-}
-.mask:before {
-  left: 4%;
-}
-.mask:after {
-  transform: skewX(30deg) scaleX(-1);
-  right: 4%;
-}
+		.head:after {
+			right: 0%;
+		}
 
-.top {
-  position: absolute;
-  width: 100%;
-  height: 60%;
-  -moz-border-radius: 50% 50% 0 0;
-  -webkit-border-radius: 50% 50% 0 0;
-  -o-border-radius: 50% 50% 0 0;
-  -ms-border-radius: 50% 50% 0 0;
-  background: #F4BF38;
-  top: -30%;
-}
-.top:before {
-  position: absolute;
-  width: 90%;
-  height: 80%;
-  -moz-border-radius: 30%;
-  -webkit-border-radius: 30%;
-  -o-border-radius: 30%;
-  -ms-border-radius: 30%;
-  content: ' ';
-  box-shadow: 0 -10px 0 #e8b535, 0 -12px 0 #f7d274;
-  left: 5%;
-  top: 70%;
-}
-.top:after {
-  position: absolute;
-  width: 90%;
-  height: 30%;
-  -moz-border-radius: 0%;
-  -webkit-border-radius: 0%;
-  -o-border-radius: 0%;
-  -ms-border-radius: 0%;
-  content: ' ';
-  box-shadow: -2px 0 0 #f7d274, 2px 0 0 #f7d274;
-  left: 5%;
-  top: 40%;
-}
+		.headtexture {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			background-image: linear-gradient(45deg, rgba(157, 15, 32, 0.3) 25%, transparent 25%, transparent 75%, rgba(157, 15, 32, 0.3) 75%, rgba(157, 15, 32, 0.3)), linear-gradient(45deg, rgba(157, 15, 32, 0.3) 25%, transparent 25%, transparent 75%, rgba(157, 15, 32, 0.3) 75%, rgba(157, 15, 32, 0.3));
+			background-size: 6px 6px;
+			background-position: 0 0, 3px 3px;
+			z-index: 1;
+		}
 
-.eyes-l, .eyes-r {
-  position: absolute;
-  width: 20%;
-  height: 12%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  background: #ab8627;
-  transform: skewX(-10deg) skewY(-10deg);
-  top: 14%;
-}
+		.eye-l, .eye-r {
+			position: absolute;
+			width: 34%;
+			height: 42%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			background: #191923;
+			z-index: 2;
+			top: 25%;
+		}
 
-.eyes-l {
-  left: 10%;
-}
+		.eye-l:before, .eye-r:before {
+			position: absolute;
+			width: 40%;
+			height: 40%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			content: ' ';
+			background: #FBFEF9;
+			top: 40%;
+			left: 30%;
+		}
 
-.eyes-r {
-  right: 10%;
-  transform: scaleX(-1) skewX(-10deg) skewY(-10deg);
-}
+		.eye-l:after, .eye-r:after {
+			position: absolute;
+			width: 60%;
+			height: 30%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			content: ' ';
+			background: #191923;
+			bottom: 10%;
+			left: 20%;
+			transform: rotate(20deg);
+		}
 
-.jaw-shadow {
-  position: absolute;
-  width: 50%;
-  height: 7%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  background: #927322;
-  bottom: 10%;
-  left: 25%;
-}
-.jaw-shadow:before, .jaw-shadow:after {
-  position: absolute;
-  width: 18%;
-  height: 200%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  content: ' ';
-  background: #927322;
-  bottom: 0%;
-}
-.jaw-shadow:before {
-  right: -8%;
-  transform: skewX(-20deg);
-}
-.jaw-shadow:after {
-  left: -8%;
-  transform: skewX(20deg);
-}
+		.eye-l {
+			left: 12%;
+		}
 
-.jaw {
-  position: absolute;
-  width: 48%;
-  height: 5%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  background: #F4BF38;
-  bottom: 11%;
-  left: 26%;
-}
-.jaw:before, .jaw:after {
-  position: absolute;
-  width: 14%;
-  height: 240%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  content: ' ';
-  background: #F4BF38;
-  bottom: 0%;
-}
-.jaw:before {
-  right: -8%;
-  transform: skewX(-20deg);
-}
-.jaw:after {
-  left: -8%;
-  transform: skewX(20deg);
-}
+		.eye-r {
+			right: 12%;
+			transform: scaleX(-1);
+		}
 
-.forhead-shadow {
-  position: absolute;
-  width: 20%;
-  height: 18%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  top: 7%;
-  left: 40%;
-}
-.forhead-shadow:before, .forhead-shadow:after {
-  position: absolute;
-  width: 60%;
-  height: 50%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  content: ' ';
-  background: #191923;
-  top: 0%;
-}
-.forhead-shadow:before {
-  left: 40%;
-  transform: skewX(-10deg);
-}
-.forhead-shadow:after {
-  right: 40%;
-  transform: skewX(10deg);
-}
+		.ironman {
+			position: absolute;
+			width: 70%;
+			height: 90%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			top: 7%;
+			left: 14%;
+			transform: rotate(6deg);
+		}
 
-.forhead {
-  position: absolute;
-  width: 20%;
-  height: 18%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  top: 6%;
-  left: 40%;
-}
-.forhead:before, .forhead:after {
-  position: absolute;
-  width: 55%;
-  height: 50%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  content: ' ';
-  background: #E50000;
-  top: 0%;
-}
-.forhead:before {
-  left: 40%;
-  transform: skewX(-10deg);
-}
-.forhead:after {
-  right: 40%;
-  transform: skewX(10deg);
-}
+		.imhead {
+			position: absolute;
+			width: 74%;
+			height: 64%;
+			-moz-border-radius: 36% 36% 50% 50%;
+			-webkit-border-radius: 36% 36% 50% 50%;
+			-o-border-radius: 36% 36% 50% 50%;
+			-ms-border-radius: 36% 36% 50% 50%;
+			box-shadow: 0 0 0 4px #191923, inset 140px 0 0 -100px #E50000, inset -140px 0 0 -100px #E50000, inset 0 -160px 0 -130px #E50000, inset 0 160px 0 -140px #E50000, inset 143px 0 0 -100px #191923, inset -143px 0 0 -100px #191923, inset 0 -163px 0 -130px #191923, inset 0 163px 0 -140px #191923;
+			top: 1%;
+			left: 13%;
+			overflow: hidden;
+		}
 
-.line {
-  position: absolute;
-  width: 80%;
-  height: 4%;
-  -moz-border-radius: 0;
-  -webkit-border-radius: 0;
-  -o-border-radius: 0;
-  -ms-border-radius: 0;
-  background: #b70000;
-  top: 26%;
-  left: 10%;
-  z-index: 1;
-}
+		.inside {
+			position: absolute;
+			width: 48%;
+			height: 50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-o-border-radius: 50%;
+			-ms-border-radius: 50%;
+			background: #5c0000;
+			top: 10%;
+			left: 26%;
+			z-index: 0;
+		}
+
+		.mask {
+			position: absolute;
+			width: 58%;
+			height: 15%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			background: #F4BF38;
+			left: 21%;
+			top: 0%;
+			z-index: 1;
+		}
+
+		.mask:before, .mask:after {
+			position: absolute;
+			width: 34%;
+			height: 70%;
+			-moz-border-radius: 0 50% 0 0;
+			-webkit-border-radius: 0 50% 0 0;
+			-o-border-radius: 0 50% 0 0;
+			-ms-border-radius: 0 50% 0 0;
+			content: ' ';
+			box-shadow: inset -22px 36px 0 0 #f4bf38;
+			bottom: -16%;
+			transform: skewX(-30deg);
+		}
+
+		.mask:before {
+			left: 4%;
+		}
+
+		.mask:after {
+			transform: skewX(30deg) scaleX(-1);
+			right: 4%;
+		}
+
+		.top {
+			position: absolute;
+			width: 100%;
+			height: 60%;
+			-moz-border-radius: 50% 50% 0 0;
+			-webkit-border-radius: 50% 50% 0 0;
+			-o-border-radius: 50% 50% 0 0;
+			-ms-border-radius: 50% 50% 0 0;
+			background: #F4BF38;
+			top: -30%;
+		}
+
+		.top:before {
+			position: absolute;
+			width: 90%;
+			height: 80%;
+			-moz-border-radius: 30%;
+			-webkit-border-radius: 30%;
+			-o-border-radius: 30%;
+			-ms-border-radius: 30%;
+			content: ' ';
+			box-shadow: 0 -10px 0 #e8b535, 0 -12px 0 #f7d274;
+			left: 5%;
+			top: 70%;
+		}
+
+		.top:after {
+			position: absolute;
+			width: 90%;
+			height: 30%;
+			-moz-border-radius: 0%;
+			-webkit-border-radius: 0%;
+			-o-border-radius: 0%;
+			-ms-border-radius: 0%;
+			content: ' ';
+			box-shadow: -2px 0 0 #f7d274, 2px 0 0 #f7d274;
+			left: 5%;
+			top: 40%;
+		}
+
+		.eyes-l, .eyes-r {
+			position: absolute;
+			width: 20%;
+			height: 12%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			background: #ab8627;
+			transform: skewX(-10deg) skewY(-10deg);
+			top: 14%;
+		}
+
+		.eyes-l {
+			left: 10%;
+		}
+
+		.eyes-r {
+			right: 10%;
+			transform: scaleX(-1) skewX(-10deg) skewY(-10deg);
+		}
+
+		.jaw-shadow {
+			position: absolute;
+			width: 50%;
+			height: 7%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			background: #927322;
+			bottom: 10%;
+			left: 25%;
+		}
+
+		.jaw-shadow:before, .jaw-shadow:after {
+			position: absolute;
+			width: 18%;
+			height: 200%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			content: ' ';
+			background: #927322;
+			bottom: 0%;
+		}
+
+		.jaw-shadow:before {
+			right: -8%;
+			transform: skewX(-20deg);
+		}
+
+		.jaw-shadow:after {
+			left: -8%;
+			transform: skewX(20deg);
+		}
+
+		.jaw {
+			position: absolute;
+			width: 48%;
+			height: 5%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			background: #F4BF38;
+			bottom: 11%;
+			left: 26%;
+		}
+
+		.jaw:before, .jaw:after {
+			position: absolute;
+			width: 14%;
+			height: 240%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			content: ' ';
+			background: #F4BF38;
+			bottom: 0%;
+		}
+
+		.jaw:before {
+			right: -8%;
+			transform: skewX(-20deg);
+		}
+
+		.jaw:after {
+			left: -8%;
+			transform: skewX(20deg);
+		}
+
+		.forhead-shadow {
+			position: absolute;
+			width: 20%;
+			height: 18%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			top: 7%;
+			left: 40%;
+		}
+
+		.forhead-shadow:before, .forhead-shadow:after {
+			position: absolute;
+			width: 60%;
+			height: 50%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			content: ' ';
+			background: #191923;
+			top: 0%;
+		}
+
+		.forhead-shadow:before {
+			left: 40%;
+			transform: skewX(-10deg);
+		}
+
+		.forhead-shadow:after {
+			right: 40%;
+			transform: skewX(10deg);
+		}
+
+		.forhead {
+			position: absolute;
+			width: 20%;
+			height: 18%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			top: 6%;
+			left: 40%;
+		}
+
+		.forhead:before, .forhead:after {
+			position: absolute;
+			width: 55%;
+			height: 50%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			content: ' ';
+			background: #E50000;
+			top: 0%;
+		}
+
+		.forhead:before {
+			left: 40%;
+			transform: skewX(-10deg);
+		}
+
+		.forhead:after {
+			right: 40%;
+			transform: skewX(10deg);
+		}
+
+		.line {
+			position: absolute;
+			width: 80%;
+			height: 4%;
+			-moz-border-radius: 0;
+			-webkit-border-radius: 0;
+			-o-border-radius: 0;
+			-ms-border-radius: 0;
+			background: #b70000;
+			top: 26%;
+			left: 10%;
+			z-index: 1;
+		}
 
 	</style>
 </head>
 <body>
-	Hello, world
-	<h1>Hi, My Name is Justin and I love jQuery</h1>
-	<h2>Will you be my friend <span class="friendName"></span> and jQuery with me?</h2>
-    <img src="images/jkid.png" id="justinKid" alt="Justin">
-	<img src="https://i.imgflip.com/1nyq03.jpg">
-    <br>
-    	<ol>
-	<li><b>About me: I love doing:</b></li>
-	  <li>Party</li>
-	  <li>jQuery</li>
-	  <li>Club</li>
-	  <li>jQuery</li>
-	  	  <li>Carpet diem</li>
-	  	  <li>
-	  	  	<button id='facts'> CLick here for more awesome facts!</button>
-	  	  	<script>$('#facts').click(function(){prompt("Want to party with me?")})</script>
-	  	  </li>
-	</ol>
-
-
-	<img src="https://media.giphy.com/media/gRkFfZqJv5L8I/giphy.gif">
-	<h1>Best browser in the world is Waiiiiiiiiit JQUERY!!!!!!!!!!</h1>
-	<img src="https://media.giphy.com/media/X1zfywreqWqIw/giphy.gif">
-
-	<h1>IT's Time to Quip with JQuery</h1>
-	<h1>I kissed the lips, of Javascript!</h1>
-	<h1>jQuery Slider</h1>
-
-		<div id="photoShowContainer">
-		  <div id="photoShowWrap">
-		    <div id="photoShow">
-
-		        <img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/137120/shot_1301059844.jpg"/>
-
-		        <img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/304344/tony-the-tiger.jpg"/>
-
-		        <img id="one" src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/308970/toucan-sam.jpg"/>
-		    </div>
-		  </div>
-		</div>
-
-    <h3 id="catText">More about me: Check out my cat...he's awesome. And so are my skills in jQuery. I'm hard working. I have an I 4 design. My favorite color is green (because I like $). I like short walks on the beach because I like the beach but not walking. Tigers are really cool... <b><ul>Rawrrrrr! (that's what tigers sound like)<ul><b></h3>
-    <img src="images/jdog.jpg" id="dogPic" alt="cat">
-    <br>
-	<img style="float:right" src="http://i.imgur.com/nMuKQM9.jpg">
-
-	<span style='background-color:blue; color:yellow; position:fixed; z-index:-9; top: 109px; right:30px; '> My favorite rapper is The Beatles </span>
-
-	<h1> My P0rtf0li0 aka my AwEsOme ProJecteS! </h1>
-
-	<div> ----=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=----- </div>
-	<h1>JQuery is Life and i love it aks Justin</h1>
-	  <div class="container">
-	    <div class="box1">
-	      <div class="swords"></div>
-	      <div class="body">
-	        <div class="light"></div>
-	        <div class="arm-l">
-	          <div class="arm"></div>
-	        </div>
-	        <div class="arm-r">
-	          <div class="arm"></div>
-	        </div>
-	        <div class="hands">
-	          <div class="handl"></div>
-	          <div class="heart-shadow"></div>
-	          <div class="heart"></div>
-	        </div>
-	      </div>
-	      <div class="inside"></div>
-	      <div class="deadpool">
-	        <div class="head">
-	          <div class="headtexture"></div>
-	          <div class="eye-l"></div>
-	          <div class="eye-r"></div>
-	        </div>
-	      </div>
-	      <div class="ironman">
-	        <div class="imhead">
-	          <div class="jaw-shadow"></div>
-	          <div class="jaw"></div>
-	          <div class="forhead-shadow"></div>
-	          <div class="forhead">
-	            <div class="line"></div>
-	          </div>
-	        </div>
-	        <div class="mask">
-	          <div class="top"></div>
-	          <div class="eyes-l"></div>
-	          <div class="eyes-r"></div>
-	        </div>
-	      </div>
-	    </div>
-	  </div>
-
-
-	<h3 class="skills">Check out these sweet jQuery skills: <span id="imghover">Hover Me</span>
-		<img id="jqueryimg" src="images/jquery.png">
-	</h3>
-
-	<h3 class="skills2">But wait, theres more! <span id="imgclick">Click Me</span></h3>
-	<img id="jqueryimg2" src="images/3370527.jpg">
+Hello, world
+<h1>Hi, My Name is Justin and I love jQuery</h1>
+<h2>Will you be my friend
+	<span class="friendName"></span>
+	and jQuery with me?
+</h2>
+<img src="images/jkid.png" id="justinKid" alt="Justin">
 <img src="https://i.imgflip.com/1nyq03.jpg">
-	<code id="beatles"> My favorite rapper is The Beatles </code>
+<br>
+<ol>
+	<li><b>About me: I love doing:</b></li>
+	<li>Party</li>
+	<li>jQuery</li>
+	<li>Club</li>
+	<li>jQuery</li>
+	<li>Carpet diem</li>
+	<li>
+		<button id="facts"> CLick here for more awesome facts!</button>
+		<script>$('#facts').click(function() {
+      prompt("Want to party with me?")
+    })</script>
+	</li>
+</ol>
 
-	<iframe
+
+<img src="https://media.giphy.com/media/gRkFfZqJv5L8I/giphy.gif">
+<h1>Best browser in the world is Waiiiiiiiiit JQUERY!!!!!!!!!!</h1>
+<img src="https://media.giphy.com/media/X1zfywreqWqIw/giphy.gif">
+
+<h1>IT's Time to Quip with JQuery</h1>
+<h1>I kissed the lips, of Javascript!</h1>
+<h1>jQuery Slider</h1>
+
+<div id="photoShowContainer">
+	<div id="photoShowWrap">
+		<div id="photoShow">
+
+			<img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/137120/shot_1301059844.jpg"/>
+
+			<img src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/304344/tony-the-tiger.jpg"/>
+
+			<img id="one"
+					 src="http://dribbble.s3.amazonaws.com/users/4467/screenshots/308970/toucan-sam.jpg"/>
+		</div>
+	</div>
+</div>
+
+<h3 id="catText">More about me: Check out my cat...he's awesome. And so are my skills in jQuery. I'm hard working. I have an I 4 design. My favorite color is green (because I like $). I like short walks on the beach because I like the beach but not walking. Tigers are really cool...
+	<b>
+		<ul>Rawrrrrr! (that's what tigers sound like)
+			<ul><b></h3>
+<img src="images/jdog.jpg" id="dogPic" alt="cat">
+<br>
+<img style="float:right" src="http://i.imgur.com/nMuKQM9.jpg">
+
+<span style="background-color:blue; color:yellow; position:fixed; z-index:-9; top: 109px; right:30px; "> My favorite rapper is The Beatles </span>
+
+<h1> My P0rtf0li0 aka my AwEsOme ProJecteS! </h1>
+
+<div> ----=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=--=-----</div>
+<h1>JQuery is Life and i love it aks Justin</h1>
+<div class="container">
+	<div class="box1">
+		<div class="swords"></div>
+		<div class="body">
+			<div class="light"></div>
+			<div class="arm-l">
+				<div class="arm"></div>
+			</div>
+			<div class="arm-r">
+				<div class="arm"></div>
+			</div>
+			<div class="hands">
+				<div class="handl"></div>
+				<div class="heart-shadow"></div>
+				<div class="heart"></div>
+			</div>
+		</div>
+		<div class="inside"></div>
+		<div class="deadpool">
+			<div class="head">
+				<div class="headtexture"></div>
+				<div class="eye-l"></div>
+				<div class="eye-r"></div>
+			</div>
+		</div>
+		<div class="ironman">
+			<div class="imhead">
+				<div class="jaw-shadow"></div>
+				<div class="jaw"></div>
+				<div class="forhead-shadow"></div>
+				<div class="forhead">
+					<div class="line"></div>
+				</div>
+			</div>
+			<div class="mask">
+				<div class="top"></div>
+				<div class="eyes-l"></div>
+				<div class="eyes-r"></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<h3 class="skills">Check out these sweet jQuery skills:
+	<span id="imghover">Hover Me</span>
+	<img id="jqueryimg" src="images/jquery.png">
+</h3>
+
+<h3 class="skills2">But wait, theres more!
+	<span id="imgclick">Click Me</span>
+</h3>
+<img id="jqueryimg2" src="images/3370527.jpg">
+<img src="https://i.imgflip.com/1nyq03.jpg">
+<code id="beatles"> My favorite rapper is The Beatles </code>
+
+<iframe
 		style="width:75%;
 		height:500px;
 		border: 10px solid red"
 		src="https://learn.jquery.com/">
-	</iframe>
+</iframe>
 
-	<img src='images/cssassassin.png'>
-	<img src='images/it-was-a-good-day-googled-yahoo-all-by-myself-it-was-a-good-day.jpg'>
+<img src="images/cssassassin.png">
+<img src="images/it-was-a-good-day-googled-yahoo-all-by-myself-it-was-a-good-day.jpg">
 
-	<h6> all Custom Cascading style sheet styling (Custom CSS). <br>That's a lot of C's and S's. <br>HAHAHLOL! SiCk. </h6>
+<h6> all Custom Cascading style sheet styling (Custom CSS).
+	<br>That's a lot of C's and S's. <br>HAHAHLOL! SiCk. </h6>
 
-	<h1>It all starts with the $ sign...</h1>
+<h1>It all starts with the $ sign...</h1>
 
-	<img src='images/yo-dawg-yo-dawg-i-heard-you-like-jquery-so-i-put-a-inside-of-a-and-wrote-divtextspantext.jpg'>
+<img src="images/yo-dawg-yo-dawg-i-heard-you-like-jquery-so-i-put-a-inside-of-a-and-wrote-divtextspantext.jpg">
 
-	<img src="./images/sloth.png">
+<img src="./images/sloth.png">
 
-	<div style='width:500px; height: 500px; background-color: yellow; position: relative'>
-		<button id='click4bugs' style='position:absolute; left:200px; top:200px; font-size: 20px'><code>Report A Bug</code></button>
-		<script type="text/javascript">
-			$('#click4bugs').mouseover(function(){
-				$(this).css({"color": "red", left:Math.random()*400 + 'px', top:Math.random()*400 + 'px'})
-			})
-		</script>
+<div style="width:500px; height: 500px; background-color: yellow; position: relative">
+	<button id="click4bugs"
+					style="position:absolute; left:200px; top:200px; font-size: 20px">
+		<code>Report A Bug</code></button>
+	<script type="text/javascript">
+    $('#click4bugs').mouseover(function() {
+      $(this).css({
+        "color": "red",
+        left   : Math.random() * 400 + 'px',
+        top    : Math.random() * 400 + 'px'
+      })
+    })
+	</script>
+</div>
+
+<h1> Hey! F33l fr33 2 shoot me an electronic mail aka e-mail. I'm looking forward to getting tons of awesome letters. Stay awesome and keeeeeeep CODING! </h1>
+
+
+<div style="width:500px; height: 500px; background-color: orange; position: relative; left: 300px; overflow: hidden">
+	<div id="contactme"></div>
+	<div id="emailselect"
+			 style="background-color: white; position: absolute; left: 50px; bottom: 135px; width: 30px; height: 30px; text-align: center; line-height: 25px"></div>
+	<button id="emailbutton"
+					style="position: absolute; left: 80px; bottom: 135px;">Select
+	</button>
+	<div style="background-color: white; position: absolute; bottom: 100px; width: 500px; height: 25px;">Email:
+		<span id="contactemail"></span>
 	</div>
-
-	<h1> Hey! F33l fr33 2 shoot me an electronic mail aka e-mail. I'm looking forward to getting tons of awesome letters. Stay awesome and keeeeeeep CODING! </h1>
-
-
-	<div style='width:500px; height: 500px; background-color: orange; position: relative; left: 300px; overflow: hidden'>
-		<div id="contactme"></div>
-		<div id="emailselect" style="background-color: white; position: absolute; left: 50px; bottom: 135px; width: 30px; height: 30px; text-align: center; line-height: 25px"></div>
-		<button id="emailbutton" style="position: absolute; left: 80px; bottom: 135px;">Select</button>
-		<div style="background-color: white; position: absolute; bottom: 100px; width: 500px; height: 25px;">Email:
-			<span id="contactemail"></span>
-		</div>
-		<div id="msgselect" style="background-color: white; position: absolute; left: 50px; bottom: 55px; width: 30px; height: 30px; text-align: center; line-height: 25px"></div>
-		<button id="msgbutton" style="position: absolute; left: 80px; bottom: 55px;">Select</button>
-		<div style="background-color: white; position: absolute; bottom: 0; width: 500px; height: 50px">Message:
-			<span id="contactmsg"></span>
-		</div>
-		<button id="sendemail" style="position: absolute; bottom: 0; right: 0">Send</button>
-		<script>
-			let characters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',
-				'0','1','2','3','4','5','6','7','8','9','@','_','-','.', '8', '=', '=', '=', 'D', ',', 'L', 'O', 'L', ' '];
-			let i = 0, j=10; emailmsg = '', msg = '';
-			setInterval(function() {
-				if (i == characters.length-1) i = 0;
-				$('#emailselect').html(characters[i]);
-				i++;
-				if (j == characters.length-1) j = 0;
-				$('#msgselect').html(characters[j]);
-				j++;
-			}, 125)
-			$('#emailbutton').on('click', function() {
-				emailmsg += characters[i];
-				$('#contactemail').html(emailmsg);
-			})
-			$('#msgbutton').on('click', function() {
-				msg += characters[j];
-				$('#contactmsg').html(msg);
-			})
-			$('#sendemail').on('click', function() {
-				emailmsg = '';
-				msg = '';
-				$('#contactemail').html(emailmsg);
-				$('#contactmsg').html(msg);
-				alert('Thx. I will reply back to all emails between the hours of 1:00 PM - 13:00, Thursday - Wednesday.');
-			})
-			let colors = ['white', 'red', 'blue', 'green', 'purple', 'orange', 'yellow', 'teal', 'violet'];
-			for (let i=0; i<50; i++) {
-				let div = $('<div>').html('Contact Me');
-				div.css('position', 'absolute');
-				div.css('left', i*5 + 'px');
-				div.css('top', i*3 + 'px');
-				div.width('252px');
-				div.css('font-size', '50px');
-				div.css('color', colors[Math.floor(Math.random() * colors.length)]);
-				$('#contactme').append(div);
-			}
-			for (let i=0; i<50; i++) {
-				let div = $('<div>').html('Contact Me');
-				div.css('position', 'absolute');
-				div.css('left', i*5+10 + 'px');
-				div.css('top', i*3+50 + 'px');
-				div.width('252px');
-				div.css('font-size', '50px');
-				div.css('color', colors[Math.floor(Math.random() * colors.length)]);
-				$('#contactme').append(div);
-			}
-			for (let i=0; i<50; i++) {
-				let div = $('<div>').html('Contact Me');
-				div.css('position', 'absolute');
-				div.css('left', i*5+5 + 'px');
-				div.css('top', i*3+100 + 'px');
-				div.width('252px');
-				div.css('font-size', '50px');
-				div.css('color', colors[Math.floor(Math.random() * colors.length)]);
-				$('#contactme').append(div);
-			}
-		</script>
+	<div id="msgselect"
+			 style="background-color: white; position: absolute; left: 50px; bottom: 55px; width: 30px; height: 30px; text-align: center; line-height: 25px"></div>
+	<button id="msgbutton"
+					style="position: absolute; left: 80px; bottom: 55px;">Select
+	</button>
+	<div style="background-color: white; position: absolute; bottom: 0; width: 500px; height: 50px">Message:
+		<span id="contactmsg"></span>
 	</div>
+	<button id="sendemail"
+					style="position: absolute; bottom: 0; right: 0">Send
+	</button>
+	<script>
+    let characters = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
+      'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
+      '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '@', '_', '-', '.', '8',
+      '=', '=', '=', 'D', ',', 'L', 'O', 'L', ' '];
+    let i = 0, j = 10;
+    emailmsg = '', msg = '';
+    setInterval(function() {
+      if (i == characters.length - 1) i = 0;
+      $('#emailselect').html(characters[i]);
+      i ++;
+      if (j == characters.length - 1) j = 0;
+      $('#msgselect').html(characters[j]);
+      j ++;
+    }, 125)
+    $('#emailbutton').on('click', function() {
+      emailmsg += characters[i];
+      $('#contactemail').html(emailmsg);
+    })
+    $('#msgbutton').on('click', function() {
+      msg += characters[j];
+      $('#contactmsg').html(msg);
+    })
+    $('#sendemail').on('click', function() {
+      emailmsg = '';
+      msg = '';
+      $('#contactemail').html(emailmsg);
+      $('#contactmsg').html(msg);
+      alert(
+        'Thx. I will reply back to all emails between the hours of 1:00 PM - 13:00, Thursday - Wednesday.');
+    })
+    let colors = ['white', 'red', 'blue', 'green', 'purple', 'orange', 'yellow',
+      'teal', 'violet'];
+    for (let i = 0; i < 50; i ++) {
+      let div = $('<div>').html('Contact Me');
+      div.css('position', 'absolute');
+      div.css('left', i * 5 + 'px');
+      div.css('top', i * 3 + 'px');
+      div.width('252px');
+      div.css('font-size', '50px');
+      div.css('color', colors[Math.floor(Math.random() * colors.length)]);
+      $('#contactme').append(div);
+    }
+    for (let i = 0; i < 50; i ++) {
+      let div = $('<div>').html('Contact Me');
+      div.css('position', 'absolute');
+      div.css('left', i * 5 + 10 + 'px');
+      div.css('top', i * 3 + 50 + 'px');
+      div.width('252px');
+      div.css('font-size', '50px');
+      div.css('color', colors[Math.floor(Math.random() * colors.length)]);
+      $('#contactme').append(div);
+    }
+    for (let i = 0; i < 50; i ++) {
+      let div = $('<div>').html('Contact Me');
+      div.css('position', 'absolute');
+      div.css('left', i * 5 + 5 + 'px');
+      div.css('top', i * 3 + 100 + 'px');
+      div.width('252px');
+      div.css('font-size', '50px');
+      div.css('color', colors[Math.floor(Math.random() * colors.length)]);
+      $('#contactme').append(div);
+    }
+	</script>
+</div>
 
-	<img src="images/Doge.png" style="position: fixed; bottom: -10px; left: -20px; width: 120px;">
+<img src="images/Doge.png"
+		 style="position: fixed; bottom: -10px; left: -20px; width: 120px;">
 
-	<img src="images/juson.png" id="soap" style="position: fixed; bottom: 0px; right: 200px; width: 120px;">
+<img src="images/juson.png"
+		 id="soap"
+		 style="position: fixed; bottom: 0px; right: 200px; width: 120px;">
 
-	<audio autoplay loop="true">
-		Your browser does not support the <code>audio</code> element.
- 		<source src="song/themesong.mp3" type="audio/mp3">	</audio>
+<audio autoplay loop="true">
+	Your browser does not support the <code>audio</code> element.
+	<source src="song/themesong.mp3" type="audio/mp3">
+</audio>
 
 
-	<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" style="width: 300px; height: 50px; position: fixed; bottom: 0; right: 0;"><title>
+<svg id="Layer_1"
+		 data-name="Layer 1"
+		 xmlns="http://www.w3.org/2000/svg"
+		 style="width: 300px; height: 50px; position: fixed; bottom: 0; right: 0;">
+	<title>
 		ng</title>
-		<path d="M155.47,23.37v-13h1.68l7.93,10.44V10.41h1.58v13H165l-7.93-10.53V23.37Zm24.06-.51a9.4,9.4,0,0,1-3.38.6q-7,0-7-6.75,0-6.39,6.8-6.39a11.67,11.67,0,0,1,3.63.54v1.45a9.65,9.65,0,0,0-3.44-.63q-5.3,0-5.3,5,0,5.39,5.22,5.39a8.85,8.85,0,0,0,1.85-.22v-4.4h1.68v5.38Zm2.67-4.5v-8h1.68v8q0,3.73,3.72,3.74t3.72-3.74v-8H193v8q0,5.09-5.39,5.1T182.21,18.36Zm15.45-8V22h6.78v1.36H196v-13Zm9.2,13h-1.74L211.56,8.7,218,23.37h-1.86l-1.68-4.08h-4.29l.46-1.36h3.26l-2.42-5.87Zm12.92,0v-13h5.53q3.7,0,3.7,3.11,0,2.53-3.62,3.74l4.45,6.11h-2.21l-4.12-5.83v-1.1q3.72-.59,3.71-2.85,0-1.79-2.07-1.79h-3.7V23.37Zm16.34-13v9.23q0,3.73-4.4,3.73V22q2.72,0,2.72-2.37V10.4Zm3,12.51V21.37a13.07,13.07,0,0,0,4.4.73q3.35,0,3.35-2.45,0-2.08-2.47-2.08h-1.67q-4.07,0-4.07-3.53,0-3.72,5.21-3.72a15.65,15.65,0,0,1,4.21.54V12.4a12,12,0,0,0-4.21-.73q-3.54,0-3.54,2.36,0,2.08,2.39,2.08h1.67q4.14,0,4.14,3.53,0,3.81-5,3.81a17.09,17.09,0,0,1-4.41-.54Z"
-		      style="fill:#cccccc"/>
-		<path d="M155.89,22.94V10h1.68l7.93,10.44V10h1.59v13h-1.68l-7.93-10.53V22.94ZM180,22.44a9.4,9.4,0,0,1-3.38.6q-7,0-7-6.75,0-6.39,6.8-6.39a11.7,11.7,0,0,1,3.63.54v1.45a9.65,9.65,0,0,0-3.44-.63q-5.3,0-5.3,5,0,5.39,5.22,5.39a8.84,8.84,0,0,0,1.85-.22v-4.4H180v5.38Zm2.67-4.5V10h1.68v8q0,3.73,3.72,3.74t3.72-3.74V10h1.68v8q0,5.1-5.39,5.1T182.63,17.94Zm15.45-8v11.6h6.78v1.36h-8.46V10Zm9.2,13h-1.74L212,8.27l6.44,14.67h-1.86l-1.68-4.08h-4.29l.46-1.36h3.26l-2.42-5.87Zm12.91,0V10h5.53q3.7,0,3.7,3.11,0,2.53-3.61,3.74l4.45,6.11H228l-4.12-5.83V16q3.72-.59,3.72-2.85,0-1.79-2.07-1.79h-3.7V22.94Z"/>
-		<path d="M236.54,10v9.23q0,3.73-4.4,3.73V21.59q2.72,0,2.72-2.37V10Zm3,12.51V20.95a13.09,13.09,0,0,0,4.4.73q3.34,0,3.35-2.45,0-2.08-2.47-2.08h-1.67q-4.07,0-4.07-3.53,0-3.72,5.21-3.72a15.7,15.7,0,0,1,4.22.54V12a12,12,0,0,0-4.21-.73q-3.53,0-3.54,2.36,0,2.08,2.39,2.08h1.67q4.14,0,4.14,3.54,0,3.81-5,3.81A17.08,17.08,0,0,1,239.53,22.49Z"
-		      style="fill:#a6120d"/>
-		<path d="M138.26,0,123.12,5.33l2.39,19.83,12.76,7,12.83-7.11,2.39-19.83Z" style="fill:#b3b3b3"/>
-		<path d="M152,6.38,138.22,1.69V30.5l11.53-6.38Z" style="fill:#a6120d"/>
-		<path d="M124.82,6.46l2.05,17.74,11.35,6.3V1.69Z" style="fill:#dd1b16"/>
-		<path d="M142,17l-3.79,1.77h-4l-1.88,4.69-3.49.06,9.36-20.82Zm-.37-.89-3.4-6.72L135.46,16h2.76Z"
-		      style="fill:#f2f2f2"/>
-		<path d="M138.22,2.73l0,6.68L141.41,16h-3.18v2.77h4.4l2.06,4.76,3.34.06Z" style="fill:#b3b3b3"/>
-		<text transform="translate(0 23.03)" style="font-size:19.772756576538086px;font-family:Helvetica, Helvetica">
-			Powered by
-		</text>
-	</svg>
+	<path d="M155.47,23.37v-13h1.68l7.93,10.44V10.41h1.58v13H165l-7.93-10.53V23.37Zm24.06-.51a9.4,9.4,0,0,1-3.38.6q-7,0-7-6.75,0-6.39,6.8-6.39a11.67,11.67,0,0,1,3.63.54v1.45a9.65,9.65,0,0,0-3.44-.63q-5.3,0-5.3,5,0,5.39,5.22,5.39a8.85,8.85,0,0,0,1.85-.22v-4.4h1.68v5.38Zm2.67-4.5v-8h1.68v8q0,3.73,3.72,3.74t3.72-3.74v-8H193v8q0,5.09-5.39,5.1T182.21,18.36Zm15.45-8V22h6.78v1.36H196v-13Zm9.2,13h-1.74L211.56,8.7,218,23.37h-1.86l-1.68-4.08h-4.29l.46-1.36h3.26l-2.42-5.87Zm12.92,0v-13h5.53q3.7,0,3.7,3.11,0,2.53-3.62,3.74l4.45,6.11h-2.21l-4.12-5.83v-1.1q3.72-.59,3.71-2.85,0-1.79-2.07-1.79h-3.7V23.37Zm16.34-13v9.23q0,3.73-4.4,3.73V22q2.72,0,2.72-2.37V10.4Zm3,12.51V21.37a13.07,13.07,0,0,0,4.4.73q3.35,0,3.35-2.45,0-2.08-2.47-2.08h-1.67q-4.07,0-4.07-3.53,0-3.72,5.21-3.72a15.65,15.65,0,0,1,4.21.54V12.4a12,12,0,0,0-4.21-.73q-3.54,0-3.54,2.36,0,2.08,2.39,2.08h1.67q4.14,0,4.14,3.53,0,3.81-5,3.81a17.09,17.09,0,0,1-4.41-.54Z"
+				style="fill:#cccccc"/>
+	<path d="M155.89,22.94V10h1.68l7.93,10.44V10h1.59v13h-1.68l-7.93-10.53V22.94ZM180,22.44a9.4,9.4,0,0,1-3.38.6q-7,0-7-6.75,0-6.39,6.8-6.39a11.7,11.7,0,0,1,3.63.54v1.45a9.65,9.65,0,0,0-3.44-.63q-5.3,0-5.3,5,0,5.39,5.22,5.39a8.84,8.84,0,0,0,1.85-.22v-4.4H180v5.38Zm2.67-4.5V10h1.68v8q0,3.73,3.72,3.74t3.72-3.74V10h1.68v8q0,5.1-5.39,5.1T182.63,17.94Zm15.45-8v11.6h6.78v1.36h-8.46V10Zm9.2,13h-1.74L212,8.27l6.44,14.67h-1.86l-1.68-4.08h-4.29l.46-1.36h3.26l-2.42-5.87Zm12.91,0V10h5.53q3.7,0,3.7,3.11,0,2.53-3.61,3.74l4.45,6.11H228l-4.12-5.83V16q3.72-.59,3.72-2.85,0-1.79-2.07-1.79h-3.7V22.94Z"/>
+	<path d="M236.54,10v9.23q0,3.73-4.4,3.73V21.59q2.72,0,2.72-2.37V10Zm3,12.51V20.95a13.09,13.09,0,0,0,4.4.73q3.34,0,3.35-2.45,0-2.08-2.47-2.08h-1.67q-4.07,0-4.07-3.53,0-3.72,5.21-3.72a15.7,15.7,0,0,1,4.22.54V12a12,12,0,0,0-4.21-.73q-3.53,0-3.54,2.36,0,2.08,2.39,2.08h1.67q4.14,0,4.14,3.54,0,3.81-5,3.81A17.08,17.08,0,0,1,239.53,22.49Z"
+				style="fill:#a6120d"/>
+	<path d="M138.26,0,123.12,5.33l2.39,19.83,12.76,7,12.83-7.11,2.39-19.83Z"
+				style="fill:#b3b3b3"/>
+	<path d="M152,6.38,138.22,1.69V30.5l11.53-6.38Z" style="fill:#a6120d"/>
+	<path d="M124.82,6.46l2.05,17.74,11.35,6.3V1.69Z" style="fill:#dd1b16"/>
+	<path d="M142,17l-3.79,1.77h-4l-1.88,4.69-3.49.06,9.36-20.82Zm-.37-.89-3.4-6.72L135.46,16h2.76Z"
+				style="fill:#f2f2f2"/>
+	<path d="M138.22,2.73l0,6.68L141.41,16h-3.18v2.77h4.4l2.06,4.76,3.34.06Z"
+				style="fill:#b3b3b3"/>
+	<text transform="translate(0 23.03)"
+				style="font-size:19.772756576538086px;font-family:Helvetica, Helvetica">
+		Powered by
+	</text>
+</svg>
 
-	<div class="overflow" style="background-color: red; color: white; font-size: 24pt;">
-		<div>
-			<ol>
-				<li><p><a href="#badSelector"></a></p></li>
-			</ol>
-		</div>
+<div class="overflow"
+		 style="background-color: red; color: white; font-size: 24pt;">
+	<div>
+		<ol>
+			<li><p><a href="#badSelector"></a></p></li>
+		</ol>
 	</div>
-	<!-- A wise man once said, "With great power comes great responsibility." -->
-	<!-- but Uncle Ben wasn't a web developer, so what'd he know. -->
-	<script>
-		$('#jqueryimg').hide();
-		$('#jqueryimg2').hide();
-		$('#imghover').hover(function() {
-			$('#jqueryimg').toggle();
-		})
-		$('#imgclick').click(function() {
-			$('#jqueryimg2').show();
-			setTimeout(function() {
-				$('#jqueryimg2').hide();
-			}, 2000)
-		})
-		alert('welcome to my website!');
-		var name = prompt('What is your name, my new friend?');
-    $(".friendName").text(name);
-	</script>
+</div>
+<!-- A wise man once said, "With great power comes great responsibility." -->
+<!-- but Uncle Ben wasn't a web developer, so what'd he know. -->
+<script>
+  $('#jqueryimg').hide();
+  $('#jqueryimg2').hide();
+  $('#imghover').hover(function() {
+    $('#jqueryimg').toggle();
+  })
+  $('#imgclick').click(function() {
+    $('#jqueryimg2').show();
+    setTimeout(function() {
+      $('#jqueryimg2').hide();
+    }, 2000)
+  })
+  alert('welcome to my website!');
+  var name = prompt('What is your name, my new friend?');
+  $(".friendName").text(name);
+</script>
 
-	<script>
-		setInterval(function() {
-			let c1 = Math.floor(Math.random() * 255);
-			let c2 = Math.floor(Math.random() * 255);
-			let c3 = Math.floor(Math.random() * 255);
-			let color = `rgb(${c1}, ${c2}, ${c3})`;
-			console.log(color);
-			$('h1').css('color', color);
-		}, 1000)
-	</script>
-	<script>
-        var $vertigo = $('#soap'),
-            $body = $(document.body),
-            bodyHeight = $body.height();
+<script>
+  setInterval(function() {
+    let c1 = Math.floor(Math.random() * 255);
+    let c2 = Math.floor(Math.random() * 255);
+    let c3 = Math.floor(Math.random() * 255);
+    let color = `rgb(${c1}, ${c2}, ${c3})`;
+    console.log(color);
+    $('h1').css('color', color);
+  }, 1000)
+</script>
+<script>
+  var $vertigo = $('#soap'), $body = $(document.body),
+    bodyHeight = $body.height();
 
-        $(window).scroll(function() {
-            $vertigo.css({
-                'transform': 'rotate(' + ($body.scrollTop() / bodyHeight * 360) + 'deg)'
-            })
-        })
-	</script>
-<!-- 	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script>
-	<script type="text/javascript" src='script.js'></script> -->
+  $(window).scroll(function() {
+    $vertigo.css({
+      'transform': 'rotate(' + ($body.scrollTop() / bodyHeight * 360) + 'deg)'
+    })
+  })
+</script>
+<div id="shaq"></div>
+<script>
+  setTimeout(function  (){
+    var iframe = '<iframe src="//giphy.com/embed/cPxRDvlSj9QKA?hideSocial=true" width="480" height="241.2" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>';
+    iframe = '<div style="position: fixed; top:50%; left:50%; transform: translate(-50%, -50%); z-index: 9099999; width: 100vw; height: auto">' + iframe + '</div>';
+    $('#shaq').html(iframe);
+  }, 30 * 1000);
+</script>
 </body>
 </html>
