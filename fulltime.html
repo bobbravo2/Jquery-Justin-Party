@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="icon" href="images/php.ico" type="image/x-icon">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<!--style tags....Justin would want it that way-->
+	<!-- -->
+</head>
+<body>
+<img src="images/constructioj.gif" height="" width="" alt=""/>
+<h1>
+	<blink>Coming soon!</blink>
+</h1>
+
+<h1>
+	<blink>Coming soon!</blink>
+</h1>
+
+<h1>
+	<blink>Coming soon!</blink>
+</h1>
+<script>
+  alert('Under construction');
+  $("blink").hide();
+  var hidden = true;
+  setInterval(function() {
+    if (hidden) {
+      hidden = false;
+      $("blink").show();
+    } else {
+      hidden = true;
+      $("blink").hide();
+    }
+  }, 250)
+</script>
+</body>
+</html>
