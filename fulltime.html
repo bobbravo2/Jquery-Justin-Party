@@ -14,26 +14,32 @@
 	<blink>Coming soon!</blink>
 </h1>
 
-<h1>
+<h2>
 	<blink>Coming soon!</blink>
-</h1>
+</h2>
 
-<h1>
+<h3>
 	<blink>Coming soon!</blink>
-</h1>
+</h3>
 <script>
   alert('Under construction');
-  $("blink").hide();
+  function blinkIT (target, interval){
+  $(target).hide();
   var hidden = true;
   setInterval(function() {
     if (hidden) {
       hidden = false;
-      $("blink").show();
+      $(target).show();
     } else {
       hidden = true;
-      $("blink").hide();
+      $(target).hide();
     }
-  }, 250)
+  }, interval)
+  }
+  blinkIT('img', 1250);
+  blinkIT('h1 blink', 250);
+  blinkIT('h2 blink', 260);
+  blinkIT('h3 blink', 275);
 </script>
 </body>
 </html>
